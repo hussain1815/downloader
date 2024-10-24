@@ -1,0 +1,21 @@
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow:none !important; 
+}
+.navbar-nav .nav-link.active {
+    border-bottom: 2px solid #21bda2;
+  }
+  .nav-link {
+    color: white; /* Default color for links */
+    transition: color 0.3s ease; /* Smooth transition for color changes */
+}
+
+.nav-link:hover {
+    color: lightgray; /* Change color on hover */
+}
+
+.nav-link.active {
+    color: #21bda2 !important; /* Active link color */
+    font-weight: 600; /* Bold text for active link */
+}

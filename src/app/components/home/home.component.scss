@@ -1,0 +1,128 @@
+.accordion-button:not(.collapsed) {
+    color: var(--bs-accordion-active-color);
+    background-color: transparent !important;
+    box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+.accordion-button:focus {
+    z-index: 3;
+    outline: 0;
+    box-shadow: none !important;
+}
+.accordion-body {
+    padding:0 !important;
+}
+.accordion-button{
+    padding-left: 0px !important;
+}
+
+
+.acc-border{
+    border: 2px solid #21bda2 !important;
+}
+
+
+
+/* Default styles for larger screens */
+.accordion-item {
+    width: 75%;
+}
+
+/* Media query for small screens */
+@media (max-width: 767.98px) {
+    .accordion-item {
+        width: 100%;
+    }
+}
+
+
+
+/* styles.css */
+textarea {
+    resize: none;
+  }
+  
+  button.btn-light {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    background: none;
+  }
+  
+  button.btn-light i {
+    font-size: 2rem;
+  }
+  
+  button.btn-light p {
+    margin: 0;
+  }
+  
+  
+  .clamp_font{
+    
+    font-size: clamp(2.625rem, 2.3125rem + 1.6667vw, 5.125rem);
+  }
+
+  .letter-spacing-3px{
+    letter-spacing: 3px;
+  }
+
+  .fw-600{
+    font-weight: 600;
+  }
+
+  // .doted_backgroud{
+  //   background-image: url(../../../assets/icons/dots_image.png);
+  //   /* background-color: #cccccc; */
+  //   background-repeat: no-repeat;
+  //   position: relative;
+  //   top: 15px;
+  // }
+
+  .doted_backgroud {
+    position: relative; /* Required for positioning the pseudo-element */
+}
+
+@media (min-width: 1025px) { /* For screens larger than 1024px */
+    .doted_backgroud::before {
+        content: '';
+        background-image: url(../../../assets/icons/dots_image.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 105px; 
+        left: 0;
+        right: 0;
+        height: 100%; 
+        z-index: -1; 
+    }
+}
+
+@media (min-width: 1440px) { 
+    .doted_backgroud::before {
+        top: 160px; 
+    }
+}
+
+@media (min-width: 2560px) { 
+    .doted_backgroud::before {
+        top: 200px; 
+    }
+}
+.doted_backgroud::after {
+  content: '';
+  position: absolute;
+  top: -12rem;
+  right: 6rem;
+  width: 70vw;
+  height: 70vw; 
+  border-radius: 50%; 
+  background: radial-gradient(circle, rgba(155, 255, 225, 0.15) 0%, rgba(155, 255, 225, 0) 100%); 
+  z-index: -1; 
+}
+
+@media (min-width: 1025px) { /* For larger screens */
+  .doted_backgroud::after {
+      top: -30rem; /* Adjust for larger screens */
+      right: 11rem; /* Adjust for larger screens */
+  }
+}
